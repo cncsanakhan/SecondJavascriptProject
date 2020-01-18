@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+        <script>
+            
+            var add=prompt("what color do you want add?");
+            var colors=  ["red" ,"blue", "green"];
+            alert(colors);
+            var add=prompt("what color do you want to add at the beggining?");
+            colors.unshift(add);
+            alert(colors);
+            var readd=prompt("add two more colors to array");
+            colors.push(readd);
+            alert(colors);
+            var thirdadd=prompt("");
+            colors.unshift(thirdadd);
+            alert(colors);
+            colors.pop();
+            alert(colors);
+            colors.shift();
+            alert(colors);
+            var fourthadd=prompt(" enter color name and at which index do you want to add color");
+            colors.splice( 2,0,fourthadd);
+            alert(colors);
+            var fifthadd=prompt("enter color name and at which index do you want to delete?");
+            colors.splice(3,1,fifthadd);
+            alert(colors);
+            var cities=["karachi","lahore","islamabad","peshawar","queta"];
+            var mycities=(cities.slice(0,3));
+            alert(mycities);
+
+
+
+
+
+            var firstName=["first1","first2"];
+            var lastName=["last1","last2"];
+
+
+
+                  for (var i=0; i<firstName.length; i++) {
+                      for( var j=0; j<lastName.length; j++) {
+                    if(i==j);
+                   document.write(firstName[i] +lastName[j] + " " );
+                  }
+                  document.write("<br>");
+                  }
+                  
+                  
+                        
+          /*  var students=["Micheal","Jhon","Tony"];
+            var score=[320,230,480];
+            var mPer=((320 % 500) * 100);
+            if(score[0]==320) {
+                document.write("score of Micheal is 320.percentage is:" + mPer);
+
+            }*/
+            var countries=[["PAKISTAN "," Karachi"," Lahore"],[" CANADA ", " Halifax","Toronto"],[" JAPAN"," Tokyo"," XYZ"]];
+            
+
+             for(var i=0; i<3; i++){
+                 for(var j=0; j<3; j++){
+                   
+                 document.write(countries[i][j] + "  ");
+                 }
+                 document.write("<br>");
+                
+             
+             }
+
+
+            var _flag = false;
+            var cities=["karachi","lahore","islamabad","hydrabad"];
+        
+
+            var mycity=prompt("enter your city");
+
+
+              for(var i=0 ; i<cities.length; i++){
+                  if(mycity === cities[i]) {
+                      alert("yes found");
+                      _flag=true;
+                  }
+              }
+                  
+                 if(_flag===false){
+                     alert("not found");
+                 }
+            
+          console.log(cities.length);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+        
+            
+        
+        </script>
+    </head>
+</html>
